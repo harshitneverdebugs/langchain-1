@@ -21,7 +21,7 @@ st.sidebar.title("News Article URLs")
 
 urls=[]
 for i in range(3):
-    url=st.sidebar.text_input(f"URl {i+1}")
+    url=st.sidebar.text_input(f"URL {i+1}")
     urls.append(url)
 
 process_url_clicked=st.sidebar.button("Process URL")
@@ -101,8 +101,3 @@ if query and vectorstore:
                 st.write(source)
     except Exception as e:
         st.error(f"Error during query processing: {e}")
-
-    
-
-
-
